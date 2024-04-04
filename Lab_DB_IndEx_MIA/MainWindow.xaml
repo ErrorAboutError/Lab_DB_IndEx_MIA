@@ -1,0 +1,57 @@
+﻿<Window x:Class="Lab_DB_IndEx_MIA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_DB_IndEx_MIA"
+        mc:Ignorable="d" 
+        Title="MainWindow" Height="710" Width="880" Background="Transparent">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Background="Gray">
+            <Button Name="EmployeesButton" Style="{StaticResource buttonStyle}" Margin="0 20 0 0" Content="Сотрудники" FontWeight="Bold" FontSize="20"
+                Height="55" Click="EmployeesButton_Click" ></Button>
+            <Button Name="PostsButton" Style="{StaticResource buttonStyle}" Margin="0 30 0 0" Content="Должность" FontWeight="Bold" FontSize="20"
+                Height="55" Click="PostsButton_Click" ></Button>
+            <Button Name="TitlesButton" Margin="0 30 0 0" Style="{StaticResource buttonStyle}" Content="Звания" FontWeight="Bold" FontSize="20"
+                Height="55" Click="TitlesButton_Click" ></Button>
+
+            <!--КНОПКИ ДЛЯ ЗАПРОСОВ-->
+            <Button Name="ForSampling" Margin="0 30 0 0" Style="{StaticResource buttonStyle4}" Content="Выборка 1" FontWeight="Bold" FontSize="20"
+                Height="55" Click="ForSampling_Click" ></Button>
+            <Button Name="ForSampling2" Margin="0 30 0 0" Style="{StaticResource buttonStyle4}" Content="Выборка 2" FontWeight="Bold" FontSize="20"
+                Height="55" Click="ForSampling2_Click" ></Button>
+            <Button Name="StaticFunc" Margin="0 30 0 0" Style="{StaticResource buttonStyle4}" Content="Статистическая" FontWeight="Bold" FontSize="20"
+                Height="55" Click="StaticFunc_Click" ></Button>
+            <Button Name="JoinRequest" Margin="0 30 0 0" Style="{StaticResource buttonStyle4}" Content="Объединение" FontWeight="Bold" FontSize="20"
+                Height="55" Click="JoinRequest_Click" ></Button>
+            <!--КНОПКИ ДЛЯ ЗАПРОСОВ-->
+
+            <Button Name="ExitButton" Margin="0 32 0 0" Style="{StaticResource buttonStyle2}" Content="Выйти" FontWeight="Bold" FontSize="20"
+                Height="55" Click="ExitButton_Click" ></Button>
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Column="1">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBlock Name="NameQuery" Background="White" Foreground ="Black" 
+                             FontSize="20" FontWeight="Bold"></TextBlock>
+                    <Frame NavigationUIVisibility="Hidden" Height="600"  Name="FrameForTableAndForm" Grid.Column="1">
+
+                    </Frame>
+                </StackPanel>
+                
+            </ScrollViewer>
+               
+           
+        </StackPanel>
+        
+
+    </Grid>
+</Window>

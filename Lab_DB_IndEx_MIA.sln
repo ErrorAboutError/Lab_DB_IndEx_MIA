@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_DB_IndEx_MIA", "Lab_DB_IndEx_MIA\Lab_DB_IndEx_MIA.csproj", "{F22AADAB-31B0-4F6E-B90F-B3672335B596}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F22AADAB-31B0-4F6E-B90F-B3672335B596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22AADAB-31B0-4F6E-B90F-B3672335B596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22AADAB-31B0-4F6E-B90F-B3672335B596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22AADAB-31B0-4F6E-B90F-B3672335B596}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FED04613-D4F3-47B4-910D-F09601E932A8}
+	EndGlobalSection
+EndGlobal
